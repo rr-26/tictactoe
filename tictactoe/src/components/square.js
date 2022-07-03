@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Sqaure(){
+export default function Sqaure(props){
     return(
-        <button className='square'>
-            X
+        <button className='square' onClick={props.handleClick}>
+            {props.value}
         </button>
     )
 }
